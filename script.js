@@ -9,16 +9,23 @@ sub.addEventListener('click',
         if(eta.value == "minorenne"){
             prezzo_scontato = (prezzo_non_scontato/100) * 80;
             console.log("Il prezzo scontato è " + prezzo_scontato.toFixed(2) + " euro");
+            document.getElementById("offerta").innerHTML = 'Biglietto minorenni';
+            document.getElementById("costo").innerHTML = prezzo_scontato = ((prezzo_non_scontato/100) * 80).toFixed(2) + '€';
         }else if(eta.value == "over65"){
             prezzo_scontato = (prezzo_non_scontato/100) * 60;
             console.log("Il prezzo scontato è " + prezzo_scontato.toFixed(2) + " euro");
+            document.getElementById("offerta").innerHTML = 'Biglietto Over 65';
+            document.getElementById("costo").innerHTML = prezzo_scontato = ((prezzo_non_scontato/100) * 60).toFixed(2) + '€';
         }else if(eta.value == "maggiorenne"){
             console.log(prezzo_non_scontato + " euro");
+            document.getElementById("offerta").innerHTML = 'Biglietto maggiorenni';
+            document.getElementById("costo").innerHTML = prezzo_non_scontato.toFixed(2) + '€';
         }
         console.log("ciao");
         console.log(nomeCognome.value);
         console.log(km.value);
         console.log(eta.value);
+
         }
     )
 

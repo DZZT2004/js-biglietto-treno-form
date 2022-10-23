@@ -1,3 +1,30 @@
 .contenitore{
     background-color: #b91450;
+    height: 1920px;
+}
+
+form > *{
+    color: #b91450;
+}
+
+.box1{
+    background-color: white;
+    width: 1500px;
+    margin: auto;
+    border-radius: 15px;
+}
+
+.box2{
+    background-color: white;
+    width: 1500px;
+    margin: auto;
+}
+
+.biglietto{
+    border: 1px solid;
+    border-right: none;
+}
+
+.grigio{
+    background-color: #808080;
 }
