@@ -25,7 +25,7 @@ sub.addEventListener('click',
         console.log(nomeCognome.value);
         console.log(km.value);
         console.log(eta.value);
-
+        document.getElementById("ticket").classList.remove("d-none");
         }
     )
 
